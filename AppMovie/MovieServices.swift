@@ -8,7 +8,8 @@
 import Foundation
 
 protocol MovieService {
-    
+    func fetchMovies(from endpoint: MovieListEndpoint, completion: @escaping (Result<MovieResponse, MovieError>) -> ())
+    func searchMovie(query: String, completion: @escaping (Result<MovieResponse, MovieError>) -> ())
 }
 
 enum MovieListEndpoint: String {
@@ -46,5 +47,7 @@ enum MovieError: Error, CustomNSError {
         }
     }
     
-    
+    var errorUserInfo: [String : Any] {
+        [NSLocalizedDescriptionKey: localizedDescription]
+    }
 }
