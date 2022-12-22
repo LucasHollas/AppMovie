@@ -52,7 +52,22 @@ class MovieStore: MovieService {
                 completion(.failure(.apiError))
             }
             
-        }
+            guard let httpResponse = response as? HTTPURLResponse, 200..<300 ~= httpResponse.statusCode else {
+                self.executeCompletionHandlerInMainThread(with: .failure(.invalidResonse), completion: completion)
+                return
+            }
+            
+            guard let data = data else {
+                self.executeCompletionHandlerInMainThread(with: .failure(.noData), completion: completion)
+                return
+            }
+            do {
+                let decodeResponse = try self.jsonDecoder.decode(D.self, from: data)
+                self.executeCompletionHandlerInMainThread(with: .success(decodeResponse), completion: completion)
+            } catch {
+                self.executeCompletionHandlerInMainThread(with: .failure(.serializationError), completion: completion)
+            }
+        }.resume()
     
     }
     
