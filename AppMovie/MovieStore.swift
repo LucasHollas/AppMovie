@@ -18,16 +18,29 @@ class MovieStore: MovieService {
     private let jsonDecoder = Utils.jsonDecoder
     
     func fetchMovies(from endpoint: MovieListEndpoint, completion: @escaping (Result<MovieResponse, MovieError>) -> ()) {
+        guard let url = URL(string: "\(baseAPIURL)/movie/\(endpoint.rawValue)") else {
+            completion(.failure(.invalidEndpoint))
+            return
+        }
+        self.loadURLAndDecode(url: url, completion: completion)
+        
+        }
         
     }
     
-    func fetchMovie(id: Int, completion: @escaping (Result<Movie, MovieError>) -> ()) {
-        
-    }
+    func fetchMovie(id: Int, completion: @escaping (Result<Movie, MovieError>) -> ())
+        {
+            guard let url = URL(string: "\(baseAPIURL)/movie/\(endpoint.rawValue)") else {
+                completion(.failure(.invalidEndpoint))
+                return
+            }
     
-    func searchMovie(query: String, completion: @escaping (Result<MovieResponse, MovieError>) -> ()) {
-        
-    }
+    func searchMovie(query: String, completion: @escaping (Result<MovieResponse, MovieError>) -> ())
+            {
+                guard let url = URL(string: "\(baseAPIURL)/movie/\(endpoint.rawValue)") else {
+                    completion(.failure(.invalidEndpoint))
+                    return
+                }
     
     private func loadURLAndDecode<D: Decodable>(url: URL, params: [String: String]? = nil, completion: @escaping (Result<D, MovieError>) -> ()) {
         guard var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false) else {
@@ -47,7 +60,8 @@ class MovieStore: MovieService {
             return
         }
         
-        urlSession.dataTask(with: finalURL) { (data, response, error) in
+        urlSession.dataTask(with: finalURL) { [weak self] (data, response, error) in
+            guard let self = self else { return }
             if error != nil {
                 completion(.failure(.apiError))
             }
