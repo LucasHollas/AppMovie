@@ -14,6 +14,7 @@
 		FAC42FB52951457B002CBD31 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC42FB42951457B002CBD31 /* Movie.swift */; };
 		FAC42FB829514676002CBD31 /* MovieServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC42FB729514676002CBD31 /* MovieServices.swift */; };
 		FAC42FBA29529295002CBD31 /* MovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC42FB929529295002CBD31 /* MovieStore.swift */; };
+		FAC42FBC2953DEA1002CBD31 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC42FBB2953DEA1002CBD31 /* Utils.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		FAC42FB42951457B002CBD31 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		FAC42FB729514676002CBD31 /* MovieServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServices.swift; sourceTree = "<group>"; };
 		FAC42FB929529295002CBD31 /* MovieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStore.swift; sourceTree = "<group>"; };
+		FAC42FBB2953DEA1002CBD31 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				FAC42FB32951454E002CBD31 /* Models */,
 				FABFD540294E810A00BCECC4 /* Assets.xcassets */,
 				FABFD542294E810A00BCECC4 /* Preview Content */,
+				FAC42FBB2953DEA1002CBD31 /* Utils.swift */,
 			);
 			path = AppMovie;
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				FAC42FB829514676002CBD31 /* MovieServices.swift in Sources */,
 				FAC42FB52951457B002CBD31 /* Movie.swift in Sources */,
 				FAC42FBA29529295002CBD31 /* MovieStore.swift in Sources */,
+				FAC42FBC2953DEA1002CBD31 /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
