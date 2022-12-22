@@ -24,23 +24,15 @@ class MovieStore: MovieService {
         }
         self.loadURLAndDecode(url: url, completion: completion)
         
-        }
-        
     }
     
     func fetchMovie(id: Int, completion: @escaping (Result<Movie, MovieError>) -> ())
         {
-            guard let url = URL(string: "\(baseAPIURL)/movie/\(endpoint.rawValue)") else {
-                completion(.failure(.invalidEndpoint))
-                return
-            }
+        }
     
     func searchMovie(query: String, completion: @escaping (Result<MovieResponse, MovieError>) -> ())
-            {
-                guard let url = URL(string: "\(baseAPIURL)/movie/\(endpoint.rawValue)") else {
-                    completion(.failure(.invalidEndpoint))
-                    return
-                }
+        {
+        }
     
     private func loadURLAndDecode<D: Decodable>(url: URL, params: [String: String]? = nil, completion: @escaping (Result<D, MovieError>) -> ()) {
         guard var urlComponents = URLComponents(url: url, resolvingAgainstBaseURL: false) else {
