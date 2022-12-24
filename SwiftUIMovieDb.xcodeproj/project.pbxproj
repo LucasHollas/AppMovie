@@ -15,6 +15,7 @@
 		FAC42FB829514676002CBD31 /* MovieServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC42FB729514676002CBD31 /* MovieServices.swift */; };
 		FAC42FBA29529295002CBD31 /* MovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC42FB929529295002CBD31 /* MovieStore.swift */; };
 		FAC42FBC2953DEA1002CBD31 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC42FBB2953DEA1002CBD31 /* Utils.swift */; };
+		FAC42FBE29574639002CBD31 /* Movie+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC42FBD29574639002CBD31 /* Movie+Stub.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		FAC42FB729514676002CBD31 /* MovieServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServices.swift; sourceTree = "<group>"; };
 		FAC42FB929529295002CBD31 /* MovieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStore.swift; sourceTree = "<group>"; };
 		FAC42FBB2953DEA1002CBD31 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		FAC42FBD29574639002CBD31 /* Movie+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Stub.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		FABFD53B294E810400BCECC4 /* AppMovie */ = {
 			isa = PBXGroup;
 			children = (
+				FAC42FBF29574663002CBD31 /* Resources */,
 				FABFD53C294E810400BCECC4 /* AppMovieApp.swift */,
 				FABFD53E294E810400BCECC4 /* ContentView.swift */,
 				FAC42FB629514656002CBD31 /* Services */,
@@ -82,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC42FB42951457B002CBD31 /* Movie.swift */,
+				FAC42FBD29574639002CBD31 /* Movie+Stub.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -93,6 +97,13 @@
 				FAC42FB929529295002CBD31 /* MovieStore.swift */,
 			);
 			name = Services;
+			sourceTree = "<group>";
+		};
+		FAC42FBF29574663002CBD31 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +179,7 @@
 				FABFD53F294E810400BCECC4 /* ContentView.swift in Sources */,
 				FABFD53D294E810400BCECC4 /* AppMovieApp.swift in Sources */,
 				FAC42FB829514676002CBD31 /* MovieServices.swift in Sources */,
+				FAC42FBE29574639002CBD31 /* Movie+Stub.swift in Sources */,
 				FAC42FB52951457B002CBD31 /* Movie.swift in Sources */,
 				FAC42FBA29529295002CBD31 /* MovieStore.swift in Sources */,
 				FAC42FBC2953DEA1002CBD31 /* Utils.swift in Sources */,
