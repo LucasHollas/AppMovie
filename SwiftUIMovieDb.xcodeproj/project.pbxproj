@@ -16,6 +16,10 @@
 		FAC42FBA29529295002CBD31 /* MovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC42FB929529295002CBD31 /* MovieStore.swift */; };
 		FAC42FBC2953DEA1002CBD31 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC42FBB2953DEA1002CBD31 /* Utils.swift */; };
 		FAC42FBE29574639002CBD31 /* Movie+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC42FBD29574639002CBD31 /* Movie+Stub.swift */; };
+		FAC42FC3295BC75C002CBD31 /* movie_info.json in Resources */ = {isa = PBXBuildFile; fileRef = FAC42FC0295BC75C002CBD31 /* movie_info.json */; };
+		FAC42FC4295BC75C002CBD31 /* movie_list.json in Resources */ = {isa = PBXBuildFile; fileRef = FAC42FC1295BC75C002CBD31 /* movie_list.json */; };
+		FAC42FC5295BC75C002CBD31 /* search_movie.json in Resources */ = {isa = PBXBuildFile; fileRef = FAC42FC2295BC75C002CBD31 /* search_movie.json */; };
+		FAC42FC8295BC7C6002CBD31 /* MovieBackdropCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC42FC7295BC7C6002CBD31 /* MovieBackdropCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +33,10 @@
 		FAC42FB929529295002CBD31 /* MovieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStore.swift; sourceTree = "<group>"; };
 		FAC42FBB2953DEA1002CBD31 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		FAC42FBD29574639002CBD31 /* Movie+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+Stub.swift"; sourceTree = "<group>"; };
+		FAC42FC0295BC75C002CBD31 /* movie_info.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_info.json; sourceTree = "<group>"; };
+		FAC42FC1295BC75C002CBD31 /* movie_list.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = movie_list.json; sourceTree = "<group>"; };
+		FAC42FC2295BC75C002CBD31 /* search_movie.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search_movie.json; sourceTree = "<group>"; };
+		FAC42FC7295BC7C6002CBD31 /* MovieBackdropCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +69,7 @@
 		FABFD53B294E810400BCECC4 /* AppMovie */ = {
 			isa = PBXGroup;
 			children = (
+				FAC42FC6295BC766002CBD31 /* Views */,
 				FAC42FBF29574663002CBD31 /* Resources */,
 				FABFD53C294E810400BCECC4 /* AppMovieApp.swift */,
 				FABFD53E294E810400BCECC4 /* ContentView.swift */,
@@ -102,8 +111,19 @@
 		FAC42FBF29574663002CBD31 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				FAC42FC0295BC75C002CBD31 /* movie_info.json */,
+				FAC42FC1295BC75C002CBD31 /* movie_list.json */,
+				FAC42FC2295BC75C002CBD31 /* search_movie.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		FAC42FC6295BC766002CBD31 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FAC42FC7295BC7C6002CBD31 /* MovieBackdropCard.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,6 +185,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FABFD544294E810A00BCECC4 /* Preview Assets.xcassets in Resources */,
+				FAC42FC3295BC75C002CBD31 /* movie_info.json in Resources */,
+				FAC42FC4295BC75C002CBD31 /* movie_list.json in Resources */,
+				FAC42FC5295BC75C002CBD31 /* search_movie.json in Resources */,
 				FABFD541294E810A00BCECC4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -178,6 +201,7 @@
 			files = (
 				FABFD53F294E810400BCECC4 /* ContentView.swift in Sources */,
 				FABFD53D294E810400BCECC4 /* AppMovieApp.swift in Sources */,
+				FAC42FC8295BC7C6002CBD31 /* MovieBackdropCard.swift in Sources */,
 				FAC42FB829514676002CBD31 /* MovieServices.swift in Sources */,
 				FAC42FBE29574639002CBD31 /* Movie+Stub.swift in Sources */,
 				FAC42FB52951457B002CBD31 /* Movie.swift in Sources */,
