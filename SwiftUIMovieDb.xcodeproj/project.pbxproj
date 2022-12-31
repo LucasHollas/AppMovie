@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FAADFE572960D95E0054703C /* MovieBackdropCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADFE562960D95E0054703C /* MovieBackdropCarouselView.swift */; };
 		FABFD53D294E810400BCECC4 /* AppMovieApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABFD53C294E810400BCECC4 /* AppMovieApp.swift */; };
 		FABFD53F294E810400BCECC4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABFD53E294E810400BCECC4 /* ContentView.swift */; };
 		FABFD541294E810A00BCECC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FABFD540294E810A00BCECC4 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FAADFE562960D95E0054703C /* MovieBackdropCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropCarouselView.swift; sourceTree = "<group>"; };
 		FABFD539294E810400BCECC4 /* AppMovie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppMovie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FABFD53C294E810400BCECC4 /* AppMovieApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMovieApp.swift; sourceTree = "<group>"; };
 		FABFD53E294E810400BCECC4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC42FC7295BC7C6002CBD31 /* MovieBackdropCard.swift */,
+				FAADFE562960D95E0054703C /* MovieBackdropCarouselView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				FAC42FBE29574639002CBD31 /* Movie+Stub.swift in Sources */,
 				FAC42FCB295BC8A9002CBD31 /* ImageLoader.swift in Sources */,
 				FAC42FB52951457B002CBD31 /* Movie.swift in Sources */,
+				FAADFE572960D95E0054703C /* MovieBackdropCarouselView.swift in Sources */,
 				FAC42FBA29529295002CBD31 /* MovieStore.swift in Sources */,
 				FAC42FBC2953DEA1002CBD31 /* Utils.swift in Sources */,
 			);
