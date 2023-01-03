@@ -28,6 +28,7 @@ struct MovieBackdropCard: View {
             .shadow(radius: 4)
             Text(movie.title!)
         }
+        .lineLimit(1)
         .onAppear {
             self.imageLoader.loadImage(with: self.movie.backdropURL)
         }
