@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA802BC92967CE910028566E /* MovieDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA802BC82967CE910028566E /* MovieDetailView.swift */; };
+		FA802BCB2967CEF50028566E /* MovieDetailState.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA802BCA2967CEF50028566E /* MovieDetailState.swift */; };
 		FAADFE572960D95E0054703C /* MovieBackdropCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADFE562960D95E0054703C /* MovieBackdropCarouselView.swift */; };
 		FAADFE592963B8370054703C /* MoviePosterCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADFE582963B8370054703C /* MoviePosterCard.swift */; };
 		FAADFE5B2963BB390054703C /* MoviePosterCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAADFE5A2963BB390054703C /* MoviePosterCarouselView.swift */; };
@@ -33,6 +34,7 @@
 
 /* Begin PBXFileReference section */
 		FA802BC82967CE910028566E /* MovieDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailView.swift; sourceTree = "<group>"; };
+		FA802BCA2967CEF50028566E /* MovieDetailState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailState.swift; sourceTree = "<group>"; };
 		FAADFE562960D95E0054703C /* MovieBackdropCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieBackdropCarouselView.swift; sourceTree = "<group>"; };
 		FAADFE582963B8370054703C /* MoviePosterCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterCard.swift; sourceTree = "<group>"; };
 		FAADFE5A2963BB390054703C /* MoviePosterCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoviePosterCarouselView.swift; sourceTree = "<group>"; };
@@ -165,6 +167,7 @@
 			children = (
 				FAC42FCA295BC8A9002CBD31 /* ImageLoader.swift */,
 				FAADFE5C296503660054703C /* MovieListState.swift */,
+				FA802BCA2967CEF50028566E /* MovieDetailState.swift */,
 			);
 			path = Bindings;
 			sourceTree = "<group>";
@@ -245,6 +248,7 @@
 				FABFD53F294E810400BCECC4 /* ContentView.swift in Sources */,
 				FABFD53D294E810400BCECC4 /* AppMovieApp.swift in Sources */,
 				FAC42FC8295BC7C6002CBD31 /* MovieBackdropCard.swift in Sources */,
+				FA802BCB2967CEF50028566E /* MovieDetailState.swift in Sources */,
 				FAC42FB829514676002CBD31 /* MovieServices.swift in Sources */,
 				FAADFE592963B8370054703C /* MoviePosterCard.swift in Sources */,
 				FAADFE6529664DA80054703C /* MovieListView.swift in Sources */,
