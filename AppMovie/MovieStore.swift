@@ -23,7 +23,6 @@ class MovieStore: MovieService {
             return
         }
         self.loadURLAndDecode(url: url, completion: completion)
-        
     }
     
     func fetchMovie(id: Int, completion: @escaping (Result<Movie, MovieError>) -> ()) {
